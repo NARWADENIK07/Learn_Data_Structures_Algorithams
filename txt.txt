@@ -1,16 +1,10 @@
-a = int(input("Enter a number : "))
+number = int(input("Enter a number : "))
 
-if a == 1 :
-    print("For dice facing number" ,1, "the opposite face will have the number", 6, ".")
-elif a == 2 :
-    print("For dice facing number" ,2, "the opposite face will have the number", 5, ".")
-elif a == 3 :
-    print("For dice facing number" ,3, "the opposite face will have the number", 4, ".")
-elif a == 4 :
-    print("For dice facing number" ,4, "the opposite face will have the number", 3, ".")
-elif a == 5 :
-    print("For dice facing number" ,5, "the opposite face will have the number", 2, ".")
-elif a == 6 :   
-    print("For dice facing number" ,6, "the opposite face will have the number", 1, ".")
+new_number = int(str(number)[::-1])
+
+if new_number == number :
+    print("Given number is palindrome")
+
 else :
-    print("Please enter a valid number between 1 and 6.")   
+
+    print("Given number is not palindrome")

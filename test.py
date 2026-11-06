@@ -1,24 +1,10 @@
-n = int(input("Enter n: "))
-m = int(input("Enter m: "))
+number = int(input("Enter a number : "))
 
-# Find quotient
-abs_div = n // m
+new_number = int(str(number)[::-1])
 
-# Find two nearby multiples
-first_multiple = abs_div * m
-second_multiple = (abs_div + 1) * m
+if new_number == number :
+    print("Given number is palindrome")
 
-# Compare distances
-if abs(n - first_multiple) < abs(n - second_multiple):
-    closest_multiple = first_multiple
+else :
 
-elif abs(n - first_multiple) == abs(n - second_multiple):
-    closest_multiple = max(
-        [first_multiple, second_multiple],
-        key=abs
-    )
-
-else:
-    closest_multiple = second_multiple
-
-print(f"The closest multiple of {m} to {n} is: {closest_multiple}")
+    print("Given number is not palindrome")
