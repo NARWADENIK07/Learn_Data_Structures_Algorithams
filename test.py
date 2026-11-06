@@ -1,10 +1,11 @@
 number = int(input("Enter a number : "))
 
-new_number = int(str(number)[::-1])
+binary = []
 
-if new_number == number :
-    print("Given number is palindrome")
+while number :
+    
+    binary.append(str(number % 2))
 
-else :
+    number //= 2
 
-    print("Given number is not palindrome")
+print("".join(binary[::-1]))
