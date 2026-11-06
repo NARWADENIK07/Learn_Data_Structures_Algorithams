@@ -283,73 +283,26 @@ Sum of Digits using While Loop: 13
 
 ## 8. Test your understanding
 
-Try to answer these questions before opening the hints.
+Try answering these questions before checking the answers.
 
-```{=html}
-<details>
-```
-```{=html}
-<summary>
-```
-`<strong>`{=html}Question 1: What does 456 % 10
-return?`</strong>`{=html}
-```{=html}
-</summary>
-```
+### Question 1: What does `456 % 10` return?
+
 **Answer:** `6`, because `% 10` gives the last digit.
 
-```{=html}
-</details>
-```
-```{=html}
-<details>
-```
-```{=html}
-<summary>
-```
-`<strong>`{=html}Question 2: What does 456 // 10
-return?`</strong>`{=html}
-```{=html}
-</summary>
-```
+### Question 2: What does `456 // 10` return?
+
 **Answer:** `45`, because `// 10` removes the last digit.
 
-```{=html}
-</details>
-```
-```{=html}
-<details>
-```
-```{=html}
-<summary>
-```
-`<strong>`{=html}Question 3: What is the sum of the digits of
-9021?`</strong>`{=html}
-```{=html}
-</summary>
-```
+### Question 3: What is the sum of the digits of `9021`?
+
 **Answer:** `9 + 0 + 2 + 1 = 12`.
 
-```{=html}
-</details>
-```
-```{=html}
-<details>
-```
-```{=html}
-<summary>
-```
-`<strong>`{=html}Question 4: Why does the while loop
-stop?`</strong>`{=html}
-```{=html}
-</summary>
-```
-**Answer:** Each iteration removes one digit using floor division by 10.
-Eventually, `number` becomes `0`, so `number != 0` is false.
+### Question 4: Why does the `while` loop stop?
 
-```{=html}
-</details>
-```
+**Answer:** Each iteration removes one digit using floor division by 10. Eventually, `number` becomes `0`, so the condition `number != 0` becomes false.
+
+---
+
 ## 9. Practise it yourself
 
 Try these inputs without running the program first. Write down your
