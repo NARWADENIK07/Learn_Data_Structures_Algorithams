@@ -1,9 +1,17 @@
 number = int(input("Enter a number"))
 
-if not number % 11 :
-    
-    print("given number is divisible by 11")
+number = str(number)
 
-else :
-    
-    print("given number is not divisible by 11")
+a = int(number[2])
+
+b = int(number[1])
+
+k = int(number[0])
+
+new_number = a**b
+
+while not len(str(number)) == k :
+
+    number //= 10
+
+print(number)
