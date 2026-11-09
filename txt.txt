@@ -1,37 +1,9 @@
-number = [6, 10, 100]
+number = int(input("Enter a number"))
 
-def countDivisor(num) :
-
-    count = 0
-
-    for i in range(1 , num+1) :
-
-        if num % i == 0 :
-
-            count += 1
+if not number % 11 :
     
-    return count
+    print("given number is divisible by 11")
 
-
-
-def theeDivisors(number) :
-
-    ans = []
-
-    for num in number :
-
-        total = 0
-
-        for i in range(1,num+1) :
-
-            if countDivisor(i) == 3 :
-
-                total += 1
-        
-        num.append(total)
-
-    return ans
-
-ans = theeDivisors(number)
-
-pritn(ans)
+else :
+    
+    print("given number is not divisible by 11")
