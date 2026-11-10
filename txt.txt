@@ -1,17 +1,11 @@
-number = int(input("Enter a number"))
+a = int(input("Enter a value of Numerator : "))
+b = int(input("Enter a value of Denominator : "))
 
-number = str(number)
+list = []
 
-a = int(number[2])
+while not if remainder in dic or not remainder == 0 :
 
-b = int(number[1])
+    quotient = a // b
+    remainder = a % b
 
-k = int(number[0])
-
-new_number = a**b
-
-while not len(str(number)) == k :
-
-    number //= 10
-
-print(number)
+    list.update(remainder)
