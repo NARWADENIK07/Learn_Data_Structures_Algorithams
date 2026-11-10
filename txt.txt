@@ -1,11 +1,21 @@
-a = int(input("Enter a value of Numerator : "))
-b = int(input("Enter a value of Denominator : "))
+n = int(input("Enter a value of n : "))
+r = int(input("Enter a value of r : "))
 
-list = []
+n = 1
 
-while not if remainder in dic or not remainder == 0 :
+while n >= 1 :
 
-    quotient = a // b
-    remainder = a % b
+    Numerator *= n
 
-    list.update(remainder)
+    n -=1
+
+d = n-r
+
+while d >= 1 :
+
+    Denominator *= d
+
+    d -= 1
+
+
+print(Numerator/Denominator)

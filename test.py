@@ -1,37 +1,22 @@
-a = int(input("Enter a value of Numerator : "))
-b = int(input("Enter a value of Denominator : "))
+n = int(input("Enter a value of n : "))
+r = int(input("Enter a value of r : "))
+
+Numerator = 1
+Denominator = 1
+d = n-r
+
+while n >= 1 :
+
+    Numerator *= n
+
+    n -=1
 
 
-if a == 0 :
+while d >= 1 :
 
-    print("0")
+    Denominator *= d
 
-res  = "-" if (a < 0) ^ (b < 0) else ""
+    d -= 1
 
-a = abs(a)
-b = abs(b)
 
-res += str(a // b)
-
-rem = a%b
-
-if rem == 0:
-    print(rem)
-
-res += "."
-mp =  {}
-
-while rem > 0 :
-
-    if rem in mp:
-        res = res[:mp[rem]] + "(" + res[mp[rem]:] + ")"
-        break
-
-    mp[rem] = len(res)
-
-    rem = rem*10
-
-    res += str(rem //b)
-    rem = rem%b
-
-print(res)
+print(Numerator//Denominator)
